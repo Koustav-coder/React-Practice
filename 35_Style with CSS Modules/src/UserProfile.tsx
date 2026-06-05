@@ -1,13 +1,15 @@
+import style from './css/userProfile.module.css'
 function UserProfile() {
   return (
     <div> 
-        <div>
-            <img src="src/assets/hero.jpg" alt="User Avatar" />
-        </div>
-        <div>
-            <h1>User Profile</h1>
+        <div className={style.card}>
+            <img className={style.img} src="/src/assets/hero.png" alt="User Avatar" />
+        
+        <div className={style.textWrapper}>
+            <h1 className={style.heading}>User Profile</h1>
             <p>This is the user profile page.</p>
-        </div>  
+        </div>
+      </div>    
     </div>
 
     
